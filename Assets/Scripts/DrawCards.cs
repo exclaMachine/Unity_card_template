@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class DrawCards : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject Card1;
+    public GameObject Card2;
+    public GameObject PlayerArea;
+    public GameObject OpponentArea;
+
     void Start()
     {
-        
+
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnClick()
     {
-        
+        GameObject playerCard = Instantiate(Card1, new Vector3(0, 0, 0), Quaternion.identity);
+        playerCard.transform.SetParent(PlayerArea.transform, false);
     }
+
 }
