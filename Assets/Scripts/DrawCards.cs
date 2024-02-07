@@ -16,8 +16,12 @@ public class DrawCards : MonoBehaviour
 
     public void OnClick()
     {
-        GameObject playerCard = Instantiate(Card1, new Vector3(0, 0, 0), Quaternion.identity);
-        playerCard.transform.SetParent(PlayerArea.transform, false);
+        for (var i = 0; i < 5; i++)
+        {
+
+            GameObject playerCard = Instantiate(Card1, new Vector3(0, 0, 0), Quaternion.identity);
+            playerCard.transform.SetParent(PlayerArea.transform, false);
+        }
     }
 
 }
