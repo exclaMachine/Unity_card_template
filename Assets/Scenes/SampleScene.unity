@@ -602,7 +602,7 @@ MonoBehaviour:
   Card1: {fileID: 2576427432468109696, guid: daa6db1516c764077b9f41040b2f5a0c, type: 3}
   Card2: {fileID: 7206133499747468684, guid: 9410754a17f0243ba916702f9e1e8d9c, type: 3}
   PlayerArea: {fileID: 299930427}
-  OpponentArea: {fileID: 7625638010576928531, guid: cd9026c4b04f6413e8cdc1d4b222192a, type: 3}
+  OpponentArea: {fileID: 75672838}
 --- !u!114 &891582409
 MonoBehaviour:
   m_ObjectHideFlags: 0
