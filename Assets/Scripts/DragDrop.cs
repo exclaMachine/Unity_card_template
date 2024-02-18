@@ -21,4 +21,9 @@ public class DragDrop : MonoBehaviour
         startPosition = transform.position;
         bIsDragging = true;
     }
+
+    public void EndDrag()
+    {
+        bIsDragging = false;
+    }
 }
