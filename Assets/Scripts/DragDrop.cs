@@ -5,6 +5,8 @@ using UnityEngine;
 public class DragDrop : MonoBehaviour
 {
     private bool bIsDragging = false;
+    private bool bIsOverDropZone = false;
+    private GameObject DropZone;
     private Vector2 startPosition;
 
     // Update is called once per frame
