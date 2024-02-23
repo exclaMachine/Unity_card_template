@@ -6,7 +6,7 @@ public class DragDrop : MonoBehaviour
 {
     private bool bIsDragging = false;
     private bool bIsOverDropZone = false;
-    private GameObject DropZone;
+    private GameObject dropZone;
     private Vector2 startPosition;
 
     // Update is called once per frame
@@ -27,5 +27,13 @@ public class DragDrop : MonoBehaviour
     public void EndDrag()
     {
         bIsDragging = false;
+        if (bIsOverDropZone)
+        {
+            transform.SetParent(dropZone.transform, false);
+        }
+        else
+        {
+            transform.position = startPosition;
+        }
     }
 }
