@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DragDrop : MonoBehaviour
 {
+    public GameObject Canvas;
     private bool bIsDragging = false;
     private bool bIsOverDropZone = false;
     private GameObject dropZone;
