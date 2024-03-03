@@ -11,6 +11,11 @@ public class DragDrop : MonoBehaviour
     private Vector2 startPosition;
 
     // Update is called once per frame
+
+    private void Awake()
+    {
+
+    }
     void Update()
     {
         if (bIsDragging)
