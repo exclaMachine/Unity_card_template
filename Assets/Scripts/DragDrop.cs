@@ -9,6 +9,7 @@ public class DragDrop : MonoBehaviour
     private bool bIsOverDropZone = false;
     private GameObject dropZone;
     private Vector2 startPosition;
+    private GameObject startParent;
 
     // Update is called once per frame
 
