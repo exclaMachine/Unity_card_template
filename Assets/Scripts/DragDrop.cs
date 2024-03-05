@@ -38,6 +38,7 @@ public class DragDrop : MonoBehaviour
 
     public void StartDrag()
     {
+        startParent = transform.parent.gameObject;
         startPosition = transform.position;
         bIsDragging = true;
     }
