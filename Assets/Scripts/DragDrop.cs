@@ -15,13 +15,14 @@ public class DragDrop : MonoBehaviour
 
     private void Awake()
     {
-        Canvas = GameObject.Find("Main Canvas");
+        Canvas = GameObject.Find("Canvas");
     }
     void Update()
     {
         if (bIsDragging)
         {
             transform.position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+            transform.SetParent(Canvas.transform, true);
         }
     }
 
@@ -53,6 +54,7 @@ public class DragDrop : MonoBehaviour
         else
         {
             transform.position = startPosition;
+            transform.SetParent(startParent.transform, false);
         }
     }
 }
