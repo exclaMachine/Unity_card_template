@@ -5,7 +5,7 @@ using UnityEngine;
 public class CardZoom : MonoBehaviour
 {
     public GameObject Canvas;
-    public GameObject ZoomCard;
+    private GameObject ZoomCard;
 
 
 }
