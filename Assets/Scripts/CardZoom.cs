@@ -7,5 +7,8 @@ public class CardZoom : MonoBehaviour
     public GameObject Canvas;
     private GameObject ZoomCard;
 
+    public void Awake()
+    {
 
+    }
 }
