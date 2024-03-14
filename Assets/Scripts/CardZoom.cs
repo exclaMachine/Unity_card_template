@@ -11,4 +11,9 @@ public class CardZoom : MonoBehaviour
     {
         Canvas = GameObject.Find("Canvas");
     }
+
+    public void OnHoverEnter()
+    {
+        ZoomCard = Instantiate(gameObject, new Vector2(Input.mousePosition.x, Input.mousePosition.y), Quaternion.identity);
+    }
 }
