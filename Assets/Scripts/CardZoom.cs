@@ -16,4 +16,9 @@ public class CardZoom : MonoBehaviour
     {
         ZoomCard = Instantiate(gameObject, new Vector2(Input.mousePosition.x, Input.mousePosition.y), Quaternion.identity);
     }
+
+    public void OnHoverExit()
+    {
+
+    }
 }
