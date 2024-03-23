@@ -16,6 +16,7 @@ public class CardZoom : MonoBehaviour
     {
         ZoomCard = Instantiate(gameObject, new Vector2(Input.mousePosition.x, Input.mousePosition.y + 200), Quaternion.identity);
         ZoomCard.transform.SetParent(Canvas.transform, false);
+        ZoomCard.layer = LayerMask.NameToLayer("Zoom");
 
         RectTransform rect = ZoomCard.GetComponent<RectTransform>();
         rect.sizeDelta = new Vector2(120, 172);
