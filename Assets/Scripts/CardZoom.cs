@@ -18,6 +18,7 @@ public class CardZoom : MonoBehaviour
         ZoomCard.transform.SetParent(Canvas.transform, false);
 
         RectTransform rect = ZoomCard.GetComponent<RectTransform>();
+        rect.sizeDelta = new Vector2(120, 172);
     }
 
     public void OnHoverExit()
